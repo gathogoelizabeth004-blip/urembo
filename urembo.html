@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Urembo Mega Event</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+}
+
+body{
+background: linear-gradient(to bottom, #4c0140);
+color: wheat;
+}
+
+.overlay{
+background:rgba(0,0,0,0.7);
+min-height:100vh;
+}
+
+header{
+text-align:center;
+padding:30px;
+background:rgba(0,0,0,0.8);
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:60px 20px;
+text-align:center;
+}
+
+h2{
+margin-bottom:20px;
+color:#f5c06a;
+}
+
+.services, .packages{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+background:rgba(255,255,255,0.1);
+padding:20px;
+border-radius:10px;
+width:200px;
+}
+
+.gallery img{
+width:250px;
+height:170px;
+margin:10px;
+border-radius:8px;
+}
+
+form{
+max-width:500px;
+margin:auto;
+}
+
+input, textarea, select{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:5px;
+}
+
+button{
+padding:12px 25px;
+border:none;
+background:#f5c06a;
+color:black;
+font-weight:bold;
+cursor:pointer;
+border-radius:5px;
+}
+
+button:hover{
+background:#ffb347;
+}
+
+.testimonial{
+background:rgba(255,255,255,0.1);
+padding:20px;
+margin:auto;
+max-width:500px;
+border-radius:10px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:black;
+}
+
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.logo svg{
+    width: 100px;
+    height: 100px;
+}
+.logo span{
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.logo-annimation
+@keyframes logo-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.animated-logo {
+    animation: logo-pulse 2s infinite ease-in-out;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="overlay">
+
+<header>
+    <div class="logo">
+        <svg class="animated-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#ffae42;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#d2691e;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <circle cx="60" cy="60" r="55" fill="url(#grad1)" />
+            <text x="60" y="70" font-size="50" font-weight="bold" text-anchor="middle" fill="white" font-family="Georgia, serif">U</text>
+        </svg>
+        <span>Urembo Mega Event</span>
+    </div>
+    <nav>
+        <a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#packages">Packages</a>
+<a href="#booking">Book Event</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section id="home">
+<h2>Creating Unforgettable Moments</h2>
+<p>We plan weddings, graduations, corporate events and more.</p>
+</section>
+
+<section id="about">
+<h2>About Us</h2>
+<p>
+
+Planning a perfect event requires good organization, a clear budget, and the right team. These tips from Urembo Mega Events help couples prepare early, choose the right venue and theme, manage guests, and coordinate vendors to ensure the wedding day is smooth, beautiful, and memorable. 
+</p>
+</section>
+
+<section id="services">
+
+<h2>Services</h2>
+
+<div class="services">
+
+<div class="card">Wedding Planning</div>
+<div class="card">Pre-Wedding Events</div>
+<div class="card">Graduations</div>
+<div class="card">Corporate Events</div>
+<div class="card">Decor Setup</div>
+<div class="card">Outside Catering</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<img src="urembo2.jpeg">
+<img src="urembo1.jpeg">
+<img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3">
+
+</div>
+
+</section>
+
+<section id="packages">
+
+<h2>Event Packages</h2>
+
+<div class="packages">
+
+<div class="card">
+<h3>Basic</h3>
+<p>Simple decor</p>
+<p>Small events</p>
+</div>
+
+<div class="card">
+<h3>Standard</h3>
+<p>Full decor</p>
+<p>Medium events</p>
+</div>
+
+<div class="card">
+<h3>Premium</h3>
+<p>Luxury decor</p>
+<p>Large events</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="booking">
+
+<h2>Book Your Event</h2>
+
+<form>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="tel" placeholder="Phone Number">
+
+<select required>
+
+<option>Select Event Type</option>
+<option>Wedding</option>
+<option>Graduation</option>
+<option>Corporate Event</option>
+<option>Other</option>
+
+</select>
+
+<input type="date">
+
+<textarea placeholder="Event Details"></textarea>
+
+<button type="submit">Book Event</button>
+
+</form>
+
+</section>
+
+<section id="testimonials">
+
+<h2>Client Reviews</h2>
+
+<div class="testimonial">
+
+<p>"Urembo Mega Event made our wedding unforgettable. The decoration and planning were perfect!"</p>
+
+</div>
+
+</section>
+
+<section id="blog">
+
+<h2>Event Tips & Ideas</h2>
+<P>10 TIPS OF A SUCCESSFUL EVENT</P>
+<p>Start planning early</p>
+
+<p>Set a clear budget</p>
+
+<p>Choose the right venue</p>
+
+<p>Create a guest list</p>
+
+<p>Select a wedding theme</p>
+
+<p>Book reliable vendors</p>
+
+<p>Plan the décor early</p>
+
+<p>Send invitations early</p>
+
+<p>Prepare a wedding schedule</p>
+
+<p>Enjoy your special day 🎉<p></p>
+
+</section>
+
+<section id="faq">
+
+<h2>FAQ</h2>
+
+<p>How early should I book my event? — At least 1 month before the event.</p>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>© 2026 Urembo Mega Event | All Rights Reserved</p>
+
+</footer>
+
+</div>
+
+</body>
+</html>
